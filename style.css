@@ -4,8 +4,8 @@
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
-homepage{
-    background-color: white;
+.homepage{
+    background-color: grey;
 }
 .navbar{
     background: black;
@@ -65,7 +65,7 @@ homepage{
 }
 
 @media screen and (max-width: 960px){
-    .navbar__container{
+    .navbar_container{
         display: flex;
         justify-content: space-between;
         height: 80px;
@@ -75,7 +75,7 @@ homepage{
         padding: 0;
     }
 
-    .navbar__menu{
+    .navbar_menu{
       display: grid;
       grid-template-columns: auto;
       margin: 0;
@@ -88,7 +88,7 @@ homepage{
       z-index: -1;  
     }
 
-    .navbar__menu.active{
+    .navbar_menu.active{
         background: black;
         top: 100%;
         opacity: 1;
@@ -103,11 +103,11 @@ homepage{
         background-color: black;
     }
 
-    #navbar__logo{
+    #navbar_logo{
         padding-left: 25px;
     }
 
-    .navbar__toggle .bar{
+    .navbar_toggle .bar{
         width: 25px;
         height: 3px;
         margin: 5px auto;
@@ -115,11 +115,11 @@ homepage{
         background: white;
     }
 
-    .navbar__item {
+    .navbar_item {
         width: 100;
     }
 
-    .navbar__links{
+    .navbar_link{
         text-align: center;
         padding: 2rem;
         width: 100%;
@@ -133,7 +133,7 @@ homepage{
         transform: translate(5%, 20%);
     }
 
-    .navbar__toggle .bar{
+    .navbar_toggle .bar{
         display: block;
         cursor: pointer;
     }
