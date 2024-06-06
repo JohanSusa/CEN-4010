@@ -64,6 +64,26 @@
     transition: all 0.3 ease;
 }
 
+
+
+
+
+
+
+
+
+
+.mainContainer{
+    height: 100px;
+    width: 80vw;
+    background-color: lightgray;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+
+
 @media screen and (max-width: 960px){
     .navbar_container{
         display: flex;
