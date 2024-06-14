@@ -63,8 +63,10 @@
     color: #4ddde0;
     transition: all 0.3 ease;
 }
-
-
+.navHidden{
+    transform: translateY(-80px);
+    transition: transform 0.3s;
+}
 
 
 
