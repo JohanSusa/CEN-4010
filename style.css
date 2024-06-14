@@ -60,7 +60,7 @@
     -moz-text-fill-color: transparent;
 }
 .navbar_link:hover{
-    color: blue;
+    color: #4ddde0;
     transition: all 0.3 ease;
 }
 
@@ -72,17 +72,40 @@
 
 
 
-
+.logo{
+    height: 5rem;
+    width: 5rem;
+}
 .mainContainer{
     height: 100px;
-    width: 80vw;
-    background-color: lightgray;
-    padding-left: 10%;
-    padding-right: 10%;
-    
+    width: 98vw;
+    background-color: #e6e6e6;
+    margin-left: 1vw;
 }
-
-
+.homeContainer1{
+    position: relative;
+}
+.homeImg1{
+    width: 100vw;
+    height: auto;
+}
+.slogan{
+    position: absolute;
+    color: black;
+    background-color: transparent;
+    height: 5%;
+    width: 25%;
+    top: 40%;
+    left: 10%;
+    font-weight: bolder;
+    font-size:xx-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.footer{
+    background-color: lightgray;
+    width: 100vw;
+    height: 100px;
+}
 
 @media screen and (max-width: 960px){
     .navbar_container{
@@ -168,5 +191,22 @@
 
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+
+
+
+    .slogan{
+        position: absolute;
+        color: black;
+        background-color: transparent;
+        height: 5%;
+        width: 25%;
+        top: 30%;
+        left: 10%;
+        font-weight: bolder;
+        font-size:medium;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 }
