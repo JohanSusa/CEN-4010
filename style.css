@@ -107,6 +107,79 @@
     font-size:xx-large;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.mainContainer2{
+    height: auto;
+    width: 100vw;
+    background-color: #e6e6e6;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.workoutCTA{
+    height: 300px;
+    width: 30vw;
+    border-radius: 1rem;
+    opacity: 50%;
+}
+.routesCTA{
+    height: 300px;
+    width: 30vw;
+    border-radius: 1rem;
+    opacity: 50%;
+}
+.trackerCTA{
+    height: 300px;
+    width: 30vw;
+    border-radius: 1rem;
+    opacity: 50%;
+}
+.buttonCTA1{
+    border-style:none;
+    background-color: transparent;
+    color:black;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 5%;
+    font-size: 60px;
+    font-weight: bolder;
+    
+}
+.buttonCTA2{
+    border-style:none;
+    background-color: transparent;
+    color:black;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 41%;
+    font-size: 60px;
+    font-weight: bolder;
+}
+.buttonCTA3{
+    border-style:none;
+    background-color: transparent;
+    color:black;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 75%;
+    font-size: 60px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+#button:hover{
+    color: #4ddde0;
+    transition: all 0.3 ease;
+}
+
+
+
+
+
+
 .footer{
     background-color: black;
     width: 100vw;
@@ -244,5 +317,68 @@
         font-weight: bolder;
         font-size:medium;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .mainContainer2{
+        height: auto;
+        width: 100vw;
+        background-color: #e6e6e6;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    .workoutCTA{
+        height: 300px;
+        width: 30vw;
+        border-radius: 1rem;
+        opacity: 50%;
+    }
+    .routesCTA{
+        height: 300px;
+        width: 30vw;
+        border-radius: 1rem;
+        opacity: 50%;
+    }
+    .trackerCTA{
+        height: 300px;
+        width: 30vw;
+        border-radius: 1rem;
+        opacity: 50%;
+    }
+    .buttonCTA1{
+        border-style:none;
+        background-color: transparent;
+        color:black;
+        position: absolute;
+        margin-top: 8%;
+        margin-left: 5%;
+        font-size: 25px;
+        font-weight: bolder;
+        
+    }
+    .buttonCTA2{
+        border-style:none;
+        background-color: transparent;
+        color:black;
+        position: absolute;
+        margin-top: 8%;
+        margin-left: 41%;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    .buttonCTA3{
+        border-style:none;
+        background-color: transparent;
+        color:black;
+        position: absolute;
+        margin-top: 8%;
+        margin-left: 75%;
+        font-size: 25px;
+        font-weight: bolder;
+        text-decoration: none;
     }
 }
