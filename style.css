@@ -223,14 +223,23 @@
     display: table;
     clear: both;
 }
-btnRow{
-    width: 90vw;
-    display: table;
+.workoutBtn1{
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: black;
+    color:white;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 1rem;
 }
-btnColumn{
-    float: left;
-    width: 33.33%;
-    padding: 15%;
+.workoutBtn2{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.workoutBtn3{
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 
