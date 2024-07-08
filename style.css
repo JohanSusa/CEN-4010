@@ -79,13 +79,18 @@
     width: 5rem;
 }
 .mainContainer{
-    height: 100px;
-    width: 98vw;
+    height: auto;
+    width: 100vw;
     background-color: #e6e6e6;
-    margin-left: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    transform: translateY(-40px);
 }
 .homeContainer1{
     position: relative;
+    transform: translateY(-80px);
 }
 .homeImg1{
     width: 100vw;
@@ -103,10 +108,173 @@
     font-size:xx-large;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.footer{
-    background-color: lightgray;
+.mainContainer2{
+    height: auto;
     width: 100vw;
-    height: 100px;
+    background-color: #e6e6e6;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.workoutCTA{
+    height: 300px;
+    width: 30vw;
+    border-radius: 1rem;
+    opacity: 50%;
+}
+.routesCTA{
+    height: 300px;
+    width: 30vw;
+    border-radius: 1rem;
+    opacity: 50%;
+}
+.trackerCTA{
+    height: 300px;
+    width: 30vw;
+    border-radius: 1rem;
+    opacity: 50%;
+}
+.buttonCTA1{
+    border-style:none;
+    background-color: transparent;
+    color:black;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 5%;
+    font-size: 60px;
+    font-weight: bolder;
+    
+}
+.buttonCTA2{
+    border-style:none;
+    background-color: transparent;
+    color:black;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 41%;
+    font-size: 60px;
+    font-weight: bolder;
+}
+.buttonCTA3{
+    border-style:none;
+    background-color: transparent;
+    color:black;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 75%;
+    font-size: 60px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+#button:hover{
+    color: #4ddde0;
+    transition: all 0.3 ease;
+}
+
+.mainContainer3{
+    height: auto;
+    width: 100vw;
+    background-color: #e6e6e6;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin-top: 1rem;
+}
+.text1{
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.header1{
+    justify-content: center;
+    text-align: center;
+    font-size: xx-large;
+    font-weight:bolder;
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
+}
+.header3{
+    justify-content: center;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
+}
+
+
+
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.row{
+    content: "";
+    display: table;
+    clear: both;
+}
+.workoutBtn1{
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: black;
+    color:white;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 1rem;
+}
+.workoutBtn2{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.workoutBtn3{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+
+
+.footer{
+    background-color: black;
+    width: 100vw;
+    height: auto;
+    margin-top: 1rem;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.footer_menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+.footer_items{
+    height: auto;
+}
+.footer_links{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    height: 100%;
+    text-decoration: none;
+}
+.footer_links:hover{
+    color: #4ddde0;
 }
 
 @media screen and (max-width: 960px){
@@ -195,6 +363,10 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    #mobile-menu2{
+        position: relative;
+        transform: translateY(0px);
+    }
 
 
 
@@ -210,5 +382,74 @@
         font-weight: bolder;
         font-size:medium;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .mainContainer2{
+        height: auto;
+        width: 100vw;
+        background-color: #e6e6e6;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        display:table;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    .workoutCTA{
+        height: 300px;
+        width: 90vw;
+        border-radius: 1rem;
+        opacity: 50%;
+        margin-left: 2vw;
+        margin-top: 1vw;
+    }
+    .routesCTA{
+        height: 300px;
+        width: 90vw;
+        border-radius: 1rem;
+        opacity: 50%;
+        margin-left: 2vw;
+        margin-top: 1vw;
+    }
+    .trackerCTA{
+        height: 300px;
+        width: 90vw;
+        border-radius: 1rem;
+        opacity: 50%;
+        margin-left: 2vw;
+        margin-top: 1vw;
+    }
+    .buttonCTA1{
+        border-style:none;
+        background-color: transparent;
+        color:black;
+        position: absolute;
+        margin-top: 23%;
+        margin-left: 2%;
+        font-size: 50px;
+        font-weight: bolder;
+        
+    }
+    .buttonCTA2{
+        border-style:none;
+        background-color: transparent;
+        color:black;
+        position: absolute;
+        margin-top: 80%;
+        margin-left: 10%;
+        font-size: 50px;
+        font-weight: bolder;
+    }
+    .buttonCTA3{
+        border-style:none;
+        background-color: transparent;
+        color:black;
+        position: absolute;
+        margin-top: 135%;
+        margin-left: 10%;
+        font-size: 50px;
+        font-weight: bolder;
+        text-decoration: none;
     }
 }
