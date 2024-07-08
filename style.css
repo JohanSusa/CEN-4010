@@ -452,4 +452,63 @@
         font-weight: bolder;
         text-decoration: none;
     }
+
+
+}
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.tracker-section {
+    background-color: #fff;
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Slightly more rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More prominent shadow */
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.section-title {
+    color: #007bff; /* Blue title */
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    color: #333; /* Darker label color */
+    display: block; /* Ensure labels are on their own line */
+    margin-bottom: 8px;
+    text-align: left; /* Align labels to the left */
+}
+
+.input-group input,
+.input-group select {
+    width: 100%; /* Make inputs and select full width */
+    padding: 10px;
+    border: 1px solid #007bff; /* Blue border */
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.calculate-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.calculate-btn:hover {
+    background-color: #0056b3; /* Slightly darker blue on hover */
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2rem;
 }
