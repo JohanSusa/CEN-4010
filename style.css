@@ -463,34 +463,34 @@ body {
 
 .tracker-section {
     background-color: #fff;
-    border: none; /* Remove default border */
-    border-radius: 10px; /* Slightly more rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More prominent shadow */
+    border: none; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     padding: 30px;
     margin-bottom: 30px;
     text-align: center;
 }
 
 .section-title {
-    color: #007bff; /* Blue title */
+    color: #007bff; 
     font-size: 1.5rem;
     margin-bottom: 25px;
 }
 
 .input-group label {
-    color: #333; /* Darker label color */
-    display: block; /* Ensure labels are on their own line */
+    color: #333; 
+    display: block; 
     margin-bottom: 8px;
-    text-align: left; /* Align labels to the left */
+    text-align: left; 
 }
 
 .input-group input,
 .input-group select {
-    width: 100%; /* Make inputs and select full width */
+    width: 100%; 
     padding: 10px;
-    border: 1px solid #007bff; /* Blue border */
+    border: 1px solid #007bff; 
     border-radius: 5px;
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    box-sizing: border-box; 
 }
 
 .calculate-btn {
@@ -505,7 +505,7 @@ body {
 }
 
 .calculate-btn:hover {
-    background-color: #0056b3; /* Slightly darker blue on hover */
+    background-color: #0056b3; 
 }
 
 .result {
