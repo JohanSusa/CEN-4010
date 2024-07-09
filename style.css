@@ -266,14 +266,14 @@
     font-size: xx-large;
     font-weight: bolder;
     font-style: oblique;
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
 }
 .dropdown{
     display: block;
     background-color: black;
     width: 90vw;
-    height: 10vw;
+    height: auto;
     margin: auto;
     padding: 1rem;
     margin-top: 1rem;
@@ -292,7 +292,45 @@
     margin: auto;
     color: white;
 }
-
+.addList{
+    background-color: white;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 1rem;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+.addList:hover{
+    background-color: #4ddde0;
+    color: white;
+}
+.list{
+    background-color: whitesmoke;
+    color: black;
+    width: 100vw;
+    height: auto;
+}
+.listName{
+    color: black;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: oblique;
+}
+#workoutList{
+    text-align: center;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    list-style-type: none;
+}
 
 
 .footer{

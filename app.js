@@ -133,3 +133,129 @@ let infoButton18 = document.querySelector("#box18");
 function showHide18(){
     infoButton18.classList.toggle("hide");
 }
+function addTo(){
+    var ul = document.getElementById('workoutList');
+    var li = document.createElement('li');
+    var text = document.createTextNode('Chest Flys');
+    li.appendChild(text);
+    ul.appendChild(li);
+}
+function addTo2(){
+    var ul = document.getElementById('workoutList');
+    var li = document.createElement('li');
+    var text = document.createTextNode('Bench Press');
+    li.appendChild(text);
+    ul.appendChild(li);
+}
+function addTo3(){
+    var ul = document.getElementById('workoutList');
+    var li = document.createElement('li');
+    var text = document.createTextNode('Incline Chest Press');
+    li.appendChild(text);
+    ul.appendChild(li);
+}
+function addTo4(){
+    var ul = document.getElementById('workoutList');
+    var li = document.createElement('li');
+    var text = document.createTextNode('Shoulder Press');
+    li.appendChild(text);
+    ul.appendChild(li);
+}
+function addTo5(){
+    var ul = document.getElementById('workoutList');
+    var li = document.createElement('li');
+    var text = document.createTextNode('Lateral Raises');
+    li.appendChild(text);
+    ul.appendChild(li);
+}
+function addTo6(){
+    var ul = document.getElementById('workoutList');
+    var li = document.createElement('li');
+    var text = document.createTextNode('Rear Delts');
+    li.appendChild(text);
+    ul.appendChild(li);
+}
+function addTo7(){
+    var ul = document.getElementById('workoutList');
+    var li = document.createElement('li');
+    var text = document.createTextNode('Lat Pulldowns');
+    li.appendChild(text);
+    ul.appendChild(li);
+}
+function addTo8(){
+    var ul = document.getElementById('workoutList');
+    var li = document.createElement('li');
+    var text = document.createTextNode('Cable Rows');
+    li.appendChild(text);
+    ul.appendChild(li);
+}
+function addTo9(){
+    var ul = document.getElementById('workoutList');
+    var li = document.createElement('li');
+    var text = document.createTextNode('Machine Rows');
+    li.appendChild(text);
+    ul.appendChild(li);
+}
+function addTo10(){
+    var ul = document.getElementById('workoutList');
+    var li = document.createElement('li');
+    var text = document.createTextNode('Skull Crusher');
+    li.appendChild(text);
+    ul.appendChild(li);
+}
+function addTo11(){
+    var ul = document.getElementById('workoutList');
+    var li = document.createElement('li');
+    var text = document.createTextNode('Seated Dip Machine');
+    li.appendChild(text);
+    ul.appendChild(li);
+}
+function addTo12(){
+    var ul = document.getElementById('workoutList');
+    var li = document.createElement('li');
+    var text = document.createTextNode('Tricep Pushdown');
+    li.appendChild(text);
+    ul.appendChild(li);
+}
+function addTo13(){
+    var ul = document.getElementById('workoutList');
+    var li = document.createElement('li');
+    var text = document.createTextNode('Hammer Curls');
+    li.appendChild(text);
+    ul.appendChild(li);
+}
+function addTo14(){
+    var ul = document.getElementById('workoutList');
+    var li = document.createElement('li');
+    var text = document.createTextNode('Preacher Curls');
+    li.appendChild(text);
+    ul.appendChild(li);
+}
+function addTo15(){
+    var ul = document.getElementById('workoutList');
+    var li = document.createElement('li');
+    var text = document.createTextNode('Bicep Curls');
+    li.appendChild(text);
+    ul.appendChild(li);
+}
+function addTo16(){
+    var ul = document.getElementById('workoutList');
+    var li = document.createElement('li');
+    var text = document.createTextNode('Leg Extensions');
+    li.appendChild(text);
+    ul.appendChild(li);
+}
+function addTo17(){
+    var ul = document.getElementById('workoutList');
+    var li = document.createElement('li');
+    var text = document.createTextNode('Leg Curls');
+    li.appendChild(text);
+    ul.appendChild(li);
+}
+function addTo18(){
+    var ul = document.getElementById('workoutList');
+    var li = document.createElement('li');
+    var text = document.createTextNode('Squats');
+    li.appendChild(text);
+    ul.appendChild(li);
+}
