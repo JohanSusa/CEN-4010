@@ -269,7 +269,29 @@
     margin-top: 3rem;
     margin-bottom: 1rem;
 }
-
+.dropdown{
+    display: block;
+    background-color: black;
+    width: 90vw;
+    height: 10vw;
+    margin: auto;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.hide{
+    display: none;
+}
+.infoText{
+    color: white;
+}
+.infoName{
+    text-align: center;
+    font-size: xx-large;
+    font-style: oblique;
+    font-weight: bolder;
+    margin: auto;
+    color: white;
+}
 
 
 
