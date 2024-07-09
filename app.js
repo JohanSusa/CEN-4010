@@ -50,7 +50,6 @@ function isValidInput(age, weight, height) {
 function getBMICategory(bmi, age, gender) {
     if (age < 18) {
         
-        
     } else {
         if (bmi < 18.5) return "Underweight";
         if (bmi < 25) return "Normal";
@@ -58,5 +57,5 @@ function getBMICategory(bmi, age, gender) {
         return "Obese";
     }
 }
-});
+
 
