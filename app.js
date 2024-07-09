@@ -49,8 +49,7 @@ function isValidInput(age, weight, height) {
 
 function getBMICategory(bmi, age, gender) {
     if (age < 18) {
-        // Logic for children and teenagers based on percentiles (research CDC guidelines)
-        // You'll need to implement this part
+        
     } else {
         if (bmi < 18.5) return "Underweight";
         if (bmi < 25) return "Normal";
@@ -58,5 +57,5 @@ function getBMICategory(bmi, age, gender) {
         return "Obese";
     }
 }
-});
+
 
