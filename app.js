@@ -58,3 +58,5 @@ function getBMICategory(bmi, age, gender) {
         return "Obese";
     }
 }
+});
+
