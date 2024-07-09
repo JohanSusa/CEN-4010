@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Tracking</title>
     <link rel="stylesheet" href="style.css">
+
+    
 </head>
-<body class="homepage">
+
+<body class="signin">
+
     <nav class="navbar">
         <div class="navbar_container">
             <a href="index.html" id = "navbar_logo"><img src="Pictures/TF.png" class="logo" alt=""></a>
@@ -32,6 +36,56 @@
         </div>
     </nav>
     <script src="app.js"></script>
+    
+    <div class="main">
+        <h1> Sign In</h1>
+        <form action="">
+            <label for="username">
+                  Username:
+            </label>
+            <input 
+                type="text" 
+                id="username" 
+                name="username" 
+                placeholder="Username" required>
+
+            <label for="password">
+                  Password:
+            </label>
+            <input 
+                type="password"
+                id="password" 
+                name="password"
+                placeholder="Password" required>
+
+            <div class="remember">
+                <label for="check">
+                    Remember Me
+                    <input
+                    type="checkbox"
+                    id="check" 
+                    name="check">
+                </label>    
+                
+                <a href="#">Forgot password?</a>
+
+            </div>
+        
+            <div class="wrap">
+                  <button type="submit"
+                          onclick="solve()">
+                        Sign In
+                  </button>
+            </div>
+      </form>
+      <p>Not registered?
+            <a href="#"
+               style="text-decoration: none;">
+                  Create an account
+            </a>
+      </p>
+        
+    </div>
 </body>
 <footer>
     <div class="footer">
