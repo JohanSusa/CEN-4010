@@ -544,6 +544,11 @@
 
 
 }
+
+
+
+
+
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
@@ -556,7 +561,7 @@ body {
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     padding: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10%;
     text-align: center;
 }
 
