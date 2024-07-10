@@ -375,6 +375,92 @@
     color: #4ddde0;
 }
 
+body.signin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    line-height: 1.5;
+    background: #f3f3f3;
+    flex-direction: column;
+    margin: 0;
+    padding:0;
+    min-height: 100vh;
+    
+    
+
+    .main {
+        background-color: #ffffff;
+        border-radius: 30px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        padding: 10px 20px;
+        transition: transform 0.2s;
+        width: 90%;
+        max-width: 800px;
+        text-align: center;
+        margin: auto;
+        margin-block: 10% auto;
+        writing-mode: horizontal-tb;
+        height: auto;
+    }
+    
+    h1 {
+        color: #4ddde0;
+    }
+    
+    label[for="username"],label[for="password"] {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: left;
+        color: #555;
+        font-weight: bold;
+    }
+    
+    
+    input[type="text"], input[type="password"] {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    button {
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        background-color: #4ddde0;
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    .wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.remember{
+        display:flex;
+        justify-content: space-between;    
+    }
+
+    .remember label, .remember input[type="checkbox"]{
+        cursor:pointer;
+    }
+
+
+
+}
+
 @media screen and (max-width: 960px){
     .navbar_container{
         display: flex;
@@ -551,6 +637,14 @@
         text-decoration: none;
     }
 
+    body.signin{
+        .main{
+            width: 100%;
+
+        }
+
+    }
+
 
 }
 
@@ -618,85 +712,4 @@ body {
 }
 
 
-body.signin{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: sans-serif;
-    line-height: 1.5;
-    background: #f3f3f3;
-    flex-direction: column;
-    margin: 0;
-    padding:0;
-    
-    
 
-    .main {
-        background-color: #ffffff;
-        border-radius: 30px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        padding: 10px 20px;
-        transition: transform 0.2s;
-        width: 500px;
-        text-align: center;
-        margin: 10%;
-        margin-bottom: 20%;
-        height: auto;
-    }
-    
-    h1 {
-        color: #4ddde0;
-    }
-    
-    label[for="username"],label[for="password"] {
-        display: block;
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 5px;
-        text-align: left;
-        color: #555;
-        font-weight: bold;
-    }
-    
-    
-    input[type="text"], input[type="password"] {
-        display: block;
-        width: 100%;
-        margin-bottom: 15px;
-        padding: 10px;
-        box-sizing: border-box;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-    }
-    
-    button {
-        padding: 15px;
-        border-radius: 10px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        border: none;
-        color: white;
-        cursor: pointer;
-        background-color: #4ddde0;
-        width: 100%;
-        font-size: 16px;
-    }
-    
-    .wrap {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    div.remember{
-        display:flex;
-        justify-content: space-between;    
-    }
-
-    .remember label, .remember input[type="checkbox"]{
-        cursor:pointer;
-    }
-
-
-
-}
