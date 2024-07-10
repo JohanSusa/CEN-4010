@@ -22,45 +22,6 @@ window.addEventListener("scroll", () => {
 
 
 
-const ageInput = document.getElementById("age");
-const genderSelect = document.getElementById("gender");
-const weightInput = document.getElementById("weight");
-const heightInput = document.getElementById("height");
-const calculateBtn = document.getElementById("calculate-bmi");
-const bmiResult = document.getElementById("bmi-result");
-
-calculateBtn.addEventListener("click", () => {
-    const age = parseInt(ageInput.value);
-    const gender = genderSelect.value;
-    const weight = parseFloat(weightInput.value);
-    const height = parseFloat(heightInput.value) / 100; 
-
-    if (isValidInput(age, weight, height)) {
-        const bmi = weight / (height * height);
-        const category = getBMICategory(bmi, age, gender);
-        bmiResult.textContent = `Your BMI is: ${bmi.toFixed(2)} - ${category}`;
-    } else {
-        bmiResult.textContent = "Please enter valid age, weight, and height.";
-    }
-});
-
-function isValidInput(age, weight, height) {
-    return !isNaN(age) && age > 0 && !isNaN(weight) && weight > 0 && !isNaN(height) && height > 0;
-}
-
-function getBMICategory(bmi, age, gender) {
-    if (age < 18) {
-        
-    } else {
-        if (bmi < 18.5) return "Underweight";
-        if (bmi < 25) return "Normal";
-        if (bmi < 30) return "Overweight";
-        return "Obese";
-    }
-}
-
-
-
 let infoButton = document.querySelector("#box1");
 function showHide(){
     infoButton.classList.toggle("hide");
@@ -133,6 +94,7 @@ let infoButton18 = document.querySelector("#box18");
 function showHide18(){
     infoButton18.classList.toggle("hide");
 }
+
 function addTo(){
     var ul = document.getElementById('workoutList');
     var li = document.createElement('li');
@@ -258,4 +220,41 @@ function addTo18(){
     var text = document.createTextNode('Squats');
     li.appendChild(text);
     ul.appendChild(li);
+}
+
+const ageInput = document.getElementById("age");
+const genderSelect = document.getElementById("gender");
+const weightInput = document.getElementById("weight");
+const heightInput = document.getElementById("height");
+const calculateBtn = document.getElementById("calculate-bmi");
+const bmiResult = document.getElementById("bmi-result");
+
+calculateBtn.addEventListener("click", () => {
+    const age = parseInt(ageInput.value);
+    const gender = genderSelect.value;
+    const weight = parseFloat(weightInput.value);
+    const height = parseFloat(heightInput.value) / 100; 
+
+    if (isValidInput(age, weight, height)) {
+        const bmi = weight / (height * height);
+        const category = getBMICategory(bmi, age, gender);
+        bmiResult.textContent = `Your BMI is: ${bmi.toFixed(2)} - ${category}`;
+    } else {
+        bmiResult.textContent = "Please enter valid age, weight, and height.";
+    }
+});
+
+function isValidInput(age, weight, height) {
+    return !isNaN(age) && age > 0 && !isNaN(weight) && weight > 0 && !isNaN(height) && height > 0;
+}
+
+function getBMICategory(bmi, age, gender) {
+    if (age < 18) {
+        
+    } else {
+        if (bmi < 18.5) return "Underweight";
+        if (bmi < 25) return "Normal";
+        if (bmi < 30) return "Overweight";
+        return "Obese";
+    }
 }

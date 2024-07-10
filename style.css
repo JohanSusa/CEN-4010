@@ -566,7 +566,7 @@ body {
 }
 
 .section-title {
-    color: #007bff; 
+    color: #4ddde0; 
     font-size: 1.5rem;
     margin-bottom: 25px;
 }
@@ -582,13 +582,13 @@ body {
 .input-group select {
     width: 100%; 
     padding: 10px;
-    border: 1px solid #007bff; 
+    border: 1px solid #4ddde0; 
     border-radius: 5px;
     box-sizing: border-box; 
 }
 
 .calculate-btn {
-    background-color: #007bff;
+    background-color: #4ddde0;
     color: #fff;
     padding: 12px 20px;
     border: none;
@@ -600,7 +600,7 @@ body {
 }
 
 .calculate-btn:hover {
-    background-color: #0056b3; 
+    background-color: #4ddde0; 
 }
 
 .result {
