@@ -644,6 +644,9 @@ body.signin{
         }
 
     }
+    .footer_links{
+        padding: 0 0.3rem;
+    }
 
 
 }
