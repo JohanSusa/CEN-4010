@@ -19,7 +19,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    width: 100vw;
+    width: 100%;
 }
 .navbar_container{
     display: flex;
@@ -82,7 +82,7 @@
 }
 .mainContainer{
     height: auto;
-    width: 100vw;
+    width: 100%;
     background-color: #e6e6e6;
     padding-left: 1vw;
     padding-right: 1vw;
@@ -95,7 +95,7 @@
     transform: translateY(-80px);
 }
 .homeImg1{
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 .slogan{
@@ -112,7 +112,7 @@
 }
 .mainContainer2{
     height: auto;
-    width: 100vw;
+    width: 100%;
     background-color: #e6e6e6;
     padding-left: 1vw;
     padding-right: 1vw;
@@ -180,7 +180,7 @@
 
 .mainContainer3{
     height: auto;
-    width: 100vw;
+    width: 100%;
     background-color: #e6e6e6;
     padding-left: 1vw;
     padding-right: 1vw;
@@ -321,7 +321,7 @@
 .list{
     background-color:#4ddde0;
     color: black;
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 .listName{
@@ -344,7 +344,7 @@
 
 .footer{
     background-color: black;
-    width: 100vw;
+    width: 100%;
     height: auto;
     margin-top: 1rem;
     padding-top: 1vw;
