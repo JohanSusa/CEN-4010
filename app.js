@@ -101,6 +101,10 @@ function addTo(){
     var text = document.createTextNode('Chest Flys');
     li.appendChild(text);
     ul.appendChild(li);
+    let span = document.createElement("span");
+    span.innerHTML = "\u00d7";
+    li.appendChild(span);
+    saveData();
 }
 function addTo2(){
     var ul = document.getElementById('workoutList');
@@ -108,6 +112,10 @@ function addTo2(){
     var text = document.createTextNode('Bench Press');
     li.appendChild(text);
     ul.appendChild(li);
+    let span = document.createElement("span");
+    span.innerHTML = "\u00d7";
+    li.appendChild(span);
+    saveData();
 }
 function addTo3(){
     var ul = document.getElementById('workoutList');
@@ -115,6 +123,10 @@ function addTo3(){
     var text = document.createTextNode('Incline Chest Press');
     li.appendChild(text);
     ul.appendChild(li);
+    let span = document.createElement("span");
+    span.innerHTML = "\u00d7";
+    li.appendChild(span);
+    saveData();
 }
 function addTo4(){
     var ul = document.getElementById('workoutList');
@@ -122,6 +134,10 @@ function addTo4(){
     var text = document.createTextNode('Shoulder Press');
     li.appendChild(text);
     ul.appendChild(li);
+    let span = document.createElement("span");
+    span.innerHTML = "\u00d7";
+    li.appendChild(span);
+    saveData();
 }
 function addTo5(){
     var ul = document.getElementById('workoutList');
@@ -129,6 +145,10 @@ function addTo5(){
     var text = document.createTextNode('Lateral Raises');
     li.appendChild(text);
     ul.appendChild(li);
+    let span = document.createElement("span");
+    span.innerHTML = "\u00d7";
+    li.appendChild(span);
+    saveData();
 }
 function addTo6(){
     var ul = document.getElementById('workoutList');
@@ -136,6 +156,10 @@ function addTo6(){
     var text = document.createTextNode('Rear Delts');
     li.appendChild(text);
     ul.appendChild(li);
+    let span = document.createElement("span");
+    span.innerHTML = "\u00d7";
+    li.appendChild(span);
+    saveData();
 }
 function addTo7(){
     var ul = document.getElementById('workoutList');
@@ -143,6 +167,10 @@ function addTo7(){
     var text = document.createTextNode('Lat Pulldowns');
     li.appendChild(text);
     ul.appendChild(li);
+    let span = document.createElement("span");
+    span.innerHTML = "\u00d7";
+    li.appendChild(span);
+    saveData();
 }
 function addTo8(){
     var ul = document.getElementById('workoutList');
@@ -150,6 +178,10 @@ function addTo8(){
     var text = document.createTextNode('Cable Rows');
     li.appendChild(text);
     ul.appendChild(li);
+    let span = document.createElement("span");
+    span.innerHTML = "\u00d7";
+    li.appendChild(span);
+    saveData();
 }
 function addTo9(){
     var ul = document.getElementById('workoutList');
@@ -157,6 +189,10 @@ function addTo9(){
     var text = document.createTextNode('Machine Rows');
     li.appendChild(text);
     ul.appendChild(li);
+    let span = document.createElement("span");
+    span.innerHTML = "\u00d7";
+    li.appendChild(span);
+    saveData();
 }
 function addTo10(){
     var ul = document.getElementById('workoutList');
@@ -164,6 +200,10 @@ function addTo10(){
     var text = document.createTextNode('Skull Crusher');
     li.appendChild(text);
     ul.appendChild(li);
+    let span = document.createElement("span");
+    span.innerHTML = "\u00d7";
+    li.appendChild(span);
+    saveData();
 }
 function addTo11(){
     var ul = document.getElementById('workoutList');
@@ -171,6 +211,10 @@ function addTo11(){
     var text = document.createTextNode('Seated Dip Machine');
     li.appendChild(text);
     ul.appendChild(li);
+    let span = document.createElement("span");
+    span.innerHTML = "\u00d7";
+    li.appendChild(span);
+    saveData();
 }
 function addTo12(){
     var ul = document.getElementById('workoutList');
@@ -178,6 +222,10 @@ function addTo12(){
     var text = document.createTextNode('Tricep Pushdown');
     li.appendChild(text);
     ul.appendChild(li);
+    let span = document.createElement("span");
+    span.innerHTML = "\u00d7";
+    li.appendChild(span);
+    saveData();
 }
 function addTo13(){
     var ul = document.getElementById('workoutList');
@@ -185,6 +233,10 @@ function addTo13(){
     var text = document.createTextNode('Hammer Curls');
     li.appendChild(text);
     ul.appendChild(li);
+    let span = document.createElement("span");
+    span.innerHTML = "\u00d7";
+    li.appendChild(span);
+    saveData();
 }
 function addTo14(){
     var ul = document.getElementById('workoutList');
@@ -192,6 +244,10 @@ function addTo14(){
     var text = document.createTextNode('Preacher Curls');
     li.appendChild(text);
     ul.appendChild(li);
+    let span = document.createElement("span");
+    span.innerHTML = "\u00d7";
+    li.appendChild(span);
+    saveData();
 }
 function addTo15(){
     var ul = document.getElementById('workoutList');
@@ -199,6 +255,10 @@ function addTo15(){
     var text = document.createTextNode('Bicep Curls');
     li.appendChild(text);
     ul.appendChild(li);
+    let span = document.createElement("span");
+    span.innerHTML = "\u00d7";
+    li.appendChild(span);
+    saveData();
 }
 function addTo16(){
     var ul = document.getElementById('workoutList');
@@ -206,6 +266,10 @@ function addTo16(){
     var text = document.createTextNode('Leg Extensions');
     li.appendChild(text);
     ul.appendChild(li);
+    let span = document.createElement("span");
+    span.innerHTML = "\u00d7";
+    li.appendChild(span);
+    saveData();
 }
 function addTo17(){
     var ul = document.getElementById('workoutList');
@@ -213,6 +277,10 @@ function addTo17(){
     var text = document.createTextNode('Leg Curls');
     li.appendChild(text);
     ul.appendChild(li);
+    let span = document.createElement("span");
+    span.innerHTML = "\u00d7";
+    li.appendChild(span);
+    saveData();
 }
 function addTo18(){
     var ul = document.getElementById('workoutList');
@@ -220,7 +288,26 @@ function addTo18(){
     var text = document.createTextNode('Squats');
     li.appendChild(text);
     ul.appendChild(li);
+    let span = document.createElement("span");
+    span.innerHTML = "\u00d7";
+    li.appendChild(span);
+    saveData();
 }
+const workoutConatiner = document.getElementById("workoutList");
+workoutConatiner.addEventListener("click", function(e){
+    if (e.target.tagName === "SPAN"){
+        e.target.parentElement.remove();
+        saveData();
+    }
+}, false);
+function saveData(){
+    localStorage.setItem("data", workoutConatiner.innerHTML);
+}
+function showList(){
+    workoutConatiner.innerHTML = localStorage.getItem("data");
+}
+showList();
+
 
 const ageInput = document.getElementById("age");
 const genderSelect = document.getElementById("gender");

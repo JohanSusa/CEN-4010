@@ -340,7 +340,16 @@
     font-weight: bold;
     list-style-type: none;
 }
-
+ul li span{
+    margin-left: 3rem;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 1rem;
+}
+ul li span:hover{
+    background: black;
+    color: #4ddde0;
+}
 
 
 .footer{
