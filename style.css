@@ -5,6 +5,9 @@
     font-family:'Courier New', Courier, monospace;
 }
 
+button{
+    cursor: pointer;
+}
 
 .homepage{
     background-color: #e6e6e6;
