@@ -348,7 +348,7 @@ function getBMICategory(bmi, age, gender) {
 
 
 
-//GOOGLE API
+//GOOGLE API        https://developers.google.com/maps/documentation/javascript/overview#javascript
 let map;
 
 async function initMap() {
