@@ -434,7 +434,7 @@ body {
     color: #4ddde0;
 }
 
-body.signin{
+body.signin, body.signup{
     display: flex;
     align-items: center;
     justify-content: center;
