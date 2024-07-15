@@ -5,6 +5,17 @@ const menuLinks2 = document.querySelector('.navbar')
 const nav = document.querySelector('.navbar')
 let lastScrollY = window.scrollY;
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    let signInLink = document.getElementById("signInLink").querySelector("a");
+    if (localStorage.getItem("sessionToken")) {
+        signInLink.textContent = "Profile";
+        signInLink.href = "profile.html";
+    } else {
+        signInLink.textContent = "Sign In";
+        signInLink.href = "signIn.html";
+    }
+});
+
 menu.addEventListener('click', function() {
     menu.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
@@ -309,5 +320,58 @@ function showList(){
 showList();
 
 
+function generateSessionToken() {
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    const tokenLength = 32;
+    let token = '';
 
+    for (let i = 0; i < tokenLength; i++) {
+        token += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
 
+    return token;
+}
+
+if (!localStorage.getItem("credentials")) {
+    localStorage.setItem("credentials", JSON.stringify([]));
+}
+
+function store_data(event) {
+    event.preventDefault(); 
+
+    let firstName = document.getElementById("firstName").value;
+    let lastName = document.getElementById("lastName").value;
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+
+    let credentials = JSON.parse(localStorage.getItem("credentials")) || [];
+    credentials.push({
+        firstName: firstName,
+        lastName: lastName,
+        username: username,
+        password: password
+    });
+
+    localStorage.setItem("credentials", JSON.stringify(credentials));
+
+    var modal = document.getElementById("myModal");
+    modal.style.display = "block"; 
+}
+
+function solve(event) {
+    event.preventDefault(); 
+
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+
+    let credentials = JSON.parse(localStorage.getItem("credentials")) || [];
+    const user = credentials.find(user => user.username === username && user.password === password);
+
+    if (user) {
+        const sessionToken = generateSessionToken();
+        localStorage.setItem('sessionToken',sessionToken);
+        window.location.href = "index.html"; 
+    } else {
+        alert("Invalid username or password. Please try again.");
+    }
+}
