@@ -5,7 +5,7 @@
     <link rel="shortcut icon" type="x-icon" href="Pictures/TF.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Tracking</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" /> 
 </head>
 <body class="homepage">
     <nav class="navbar">
@@ -26,13 +26,71 @@
                 <li class="navbar_item">
                     <a href="tracker.html" class="navbar_link">Tracker</a>
                 </li>
-                <li class="navbar_item">
+                <li class="navbar_item" id="signInLink">
                     <a href="signIn.html" class="navbar_link">Sign In</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <script src="app.js"></script>
+
+    <!--GOOGLE API      https://developers.google.com/maps/documentation/javascript/overview#javascript-->
+    <div id="map"></div>
+
+    <div class="mainContainer4"> <!--https://chatgpt.com/-->
+        <h1>Benefits for Walking and running</h1>
+        <h3 class="routesHeader3">Improved Sleep:</h3>
+        <p>Both running and walking can help improve sleep quality and reduce insomnia.</p>
+        <h3 class="routesHeader3">Enhanced Brain Function:</h3>
+        <p>Cardiovascular exercise increases blood flow to the brain, improving cognitive function and reducing the risk of dementia.</p>
+        <h3 class="routesHeader3">Social Opportunities:</h3>
+        <p>Running and walking can be social activities, providing opportunities to connect with others.</p>
+        <h3 class="routesHeader3">Accessibility:</h3>
+        <p>Both activities require minimal equipment and can be done almost anywhere, making them accessible forms of exercise.</p>
+        <h3 class="routesHeader3">Improved Stamina and Endurance:</h3>
+        <p>Regular running can enhance your stamina and overall endurance.</p>
+        <h3 class="routesHeader3">Cardiovascular Health:</h3>
+        <p>Running strengthens the heart, improves circulation, and reduces the risk of heart disease.</p>
+        <h3 class="routesHeader3">Weight Management:</h3>
+        <p>Running burns a significant number of calories, aiding in weight loss and weight maintenance.</p>
+        <h3 class="routesHeader3">Bone Health:</h3>
+        <p>Like running, walking helps improve bone density, though to a lesser extent.</p>
+        <h1 class="routesHeader3">Consistency and Motivation</h1>
+        <h3 class="routesHeader3">Routine Establishment:</h3>
+        <p>A set route helps establish a routine, making it easier to incorporate exercise into your daily schedule.</p>
+        <h3 class="routesHeader3">Motivation:</h3>
+        <p>Familiar routes can provide motivation, as you can track your progress and set goals based on distance and time.</p>
+        <h3 class="routesHeader3">Accountability:</h3>
+        <p>Knowing your route can help you stay committed to your exercise routine, as it's easier to plan and follow through.</p>
+        <h1 class="routesHeader3">Safety</h1>
+        <h3 class="routesHeader3">Safety:</h3>
+        <p>Familiarity with your route increases safety, as you know the terrain, traffic patterns, and potential hazards.</p>
+        <h3 class="routesHeader3">Preparedness:</h3>
+        <p>Knowing your route allows you to prepare for any challenges, such as inclines or rough terrain, and bring necessary gear (e.g., appropriate footwear, water).</p>
+        <h3 class="routesHeader3">Emergency Planning:</h3>
+        <p>A set route allows you to plan for emergencies, knowing where you can find help or access emergency services if needed.</p>
+        <h1 class="routesHeader3">Tracking Progress</h1>
+        <h3 class="routesHeader3">Performance Tracking:</h3>
+        <p>Having a consistent route allows you to measure your performance over time, making it easier to track improvements in speed, distance, and endurance.</p>
+        <h3 class="routesHeader3">Benchmarking:</h3>
+        <p>You can set benchmarks and goals based on your route, making it easier to monitor progress and stay motivated.</p>
+        <h3 class="routesHeader3">Comparison:</h3>
+        <p>Comparing times and distances on the same route helps identify areas for improvement and celebrate progress.</p>
+        <h1 class="routesHeader3">Convenience and Efficiency</h1>
+        <h3 class="routesHeader3">Time Management:</h3>
+        <p>A set route helps you manage your time effectively, as you can estimate how long your exercise session will take.</p>
+        <h3 class="routesHeader3">Planning:</h3>
+        <p>Knowing your route simplifies planning, reducing decision-making time and allowing you to focus on your workout.</p>
+        <h3 class="routesHeader3">Reduced Stress:</h3>
+        <p>Familiarity with your route reduces the stress of choosing a new path each time, allowing you to enjoy your exercise more fully.</p>
+
+    </div>
+
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyA_jiVBlVZsHvPAPwm7ussOke_0Qw4b2DE", v: "weekly"});</script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_jiVBlVZsHvPAPwm7ussOke_0Qw4b2DE&loading=async&callback=initMap"> 
+    </script> 
+    <script src="appRoutes.js"></script>
 </body>
 <footer>
     <div class="footer">
