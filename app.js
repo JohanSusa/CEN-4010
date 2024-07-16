@@ -380,6 +380,7 @@ function solve(event) {
         window.location.href = "index.html"; 
     } else {
         errorMessage.textContent = "Invalid username or password. Please try again.";
+        errorMessage.style.display = 'block';
     }
 }
 
