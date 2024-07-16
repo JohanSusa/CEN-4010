@@ -434,7 +434,7 @@ body {
     color: #4ddde0;
 }
 
-body.signin, body.signup{
+body.signin, body.signup, body.forgotpassword {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -926,6 +926,30 @@ body {
 
 .step-info a:hover {
     text-decoration: underline;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.password-container .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 35%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 14px; /* Adjust font size if necessary */
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
 }
 
 
