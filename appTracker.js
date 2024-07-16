@@ -58,3 +58,19 @@ function getBMICategory(bmi, age, gender) {
         return "Obese";
     }
 }
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    let signInLink = document.getElementById("signInLink").querySelector("a");
+    if (localStorage.getItem("sessionToken")) {
+        signInLink.textContent = "Profile";
+        signInLink.href = "profile.html";
+    } else {
+        signInLink.textContent = "Sign In";
+        signInLink.href = "signIn.html";
+    }
+
+    // Profile page specific logic
+    if (window.location.pathname.endsWith('profile.html')) {
+        displayProfileInfo();
+    }
+});
