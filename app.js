@@ -337,12 +337,26 @@ if (!localStorage.getItem("credentials")) {
 }
 
 function store_data(event) {
-    event.preventDefault(); 
+    event.preventDefault();
 
     let firstName = document.getElementById("firstName").value;
     let lastName = document.getElementById("lastName").value;
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
+
+    // Username and password validation
+    const usernamePattern = /^[A-Za-z0-9]{5,15}$/;
+    const passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}$/;
+
+    if (!usernamePattern.test(username)) {
+        alert("Username must be 5-15 characters long and contain only letters and numbers.");
+        return;
+    }
+
+    if (!passwordPattern.test(password)) {
+        alert("Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special character.");
+        return;
+    }
 
     let credentials = JSON.parse(localStorage.getItem("credentials")) || [];
     credentials.push({
@@ -355,7 +369,7 @@ function store_data(event) {
     localStorage.setItem("credentials", JSON.stringify(credentials));
 
     var modal = document.getElementById("myModal");
-    modal.style.display = "block"; 
+    modal.style.display = "block";
 }
 
 function solve(event) {
@@ -373,5 +387,39 @@ function solve(event) {
         window.location.href = "index.html"; 
     } else {
         alert("Invalid username or password. Please try again.");
+    }
+}
+
+function recoverPassword(event) {
+    event.preventDefault(); 
+
+    let firstName = document.getElementById("firstName").value;
+    let lastName = document.getElementById("lastName").value;
+    let username = document.getElementById("username").value;
+
+    let credentials = JSON.parse(localStorage.getItem("credentials")) || [];
+    const user = credentials.find(user => user.username === username && user.firstName === firstName && user.lastName === lastName);
+
+    var modal = document.getElementById("myModal");
+    var recoveryMessage = document.getElementById("recoveryMessage");
+
+    if (user) {
+        recoveryMessage.textContent = `Your password is: ${user.password}`;
+    } else {
+        recoveryMessage.textContent = "User not found or details do not match.";
+    }
+    
+    modal.style.display = "block";
+}
+
+function togglePassword() {
+    let passwordField = document.getElementById("password");
+    let toggleButton = document.querySelector(".toggle-password");
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+        toggleButton.textContent = "Hide";
+    } else {
+        passwordField.type = "password";
+        toggleButton.textContent = "Show";
     }
 }
