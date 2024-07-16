@@ -41,7 +41,10 @@
             <input type="text" id="username" name="username" placeholder="Username" required>
             
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Password" required>
+            <div class="password-container">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <span class="toggle-password" onclick="togglePassword()">Show</span>
+            </div>
             
             <div class="remember">
                 <label for="check">
