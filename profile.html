@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="x-icon" href="Pictures/TF.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness Tracking</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="signin">
+<body class="profile">
     <nav class="navbar">
         <div class="navbar_container">
             <a href="index.html" id="navbar_logo"><img src="Pictures/TF.png" class="logo" alt=""></a>
@@ -33,6 +33,17 @@
             </ul>
         </div>
     </nav>
+
+    <div class="main">
+        <h1>User Profile</h1>
+        <div id="profile-info">
+            <p><strong>First Name:</strong> <span id="profile-firstName"></span></p>
+            <p><strong>Last Name:</strong> <span id="profile-lastName"></span></p>
+            <p><strong>Username:</strong> <span id="profile-username"></span></p>
+        </div>
+        <button onclick="signOut()">Sign Out</button>
+    </div>
+
     <script src="app.js"></script>
 </body>
 <footer>

@@ -14,6 +14,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
         signInLink.textContent = "Sign In";
         signInLink.href = "signIn.html";
     }
+
+    // Profile page specific logic
+    if (window.location.pathname.endsWith('profile.html')) {
+        displayProfileInfo();
+    }
 });
 
 menu.addEventListener('click', function() {
@@ -332,41 +337,25 @@ function generateSessionToken() {
     return token;
 }
 
-if (!localStorage.getItem("credentials")) {
-    localStorage.setItem("credentials", JSON.stringify([]));
-}
-
 function store_data(event) {
-    event.preventDefault();
+    event.preventDefault(); 
 
-    let firstName = document.getElementById("firstName").value;
-    let lastName = document.getElementById("lastName").value;
-    let username = document.getElementById("username").value;
-    let password = document.getElementById("password").value;
+    var arr = JSON.parse(localStorage.getItem("credentials")) || [];
 
-    // Username and password validation
-    const usernamePattern = /^[A-Za-z0-9]{5,15}$/;
-    const passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}$/;
+    let user_name = document.getElementById("username").value;
+    let user_paswrd = document.getElementById("password").value;
+    let first_name = document.getElementById("firstName").value;
+    let last_name = document.getElementById("lastName").value;
 
-    if (!usernamePattern.test(username)) {
-        alert("Username must be 5-15 characters long and contain only letters and numbers.");
-        return;
-    }
-
-    if (!passwordPattern.test(password)) {
-        alert("Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special character.");
-        return;
-    }
-
-    let credentials = JSON.parse(localStorage.getItem("credentials")) || [];
-    credentials.push({
-        firstName: firstName,
-        lastName: lastName,
-        username: username,
-        password: password
+    arr.push({
+        firstName: first_name,
+        lastName: last_name,
+        username: user_name,
+        password: user_paswrd,
+        sessionToken: generateSessionToken()
     });
 
-    localStorage.setItem("credentials", JSON.stringify(credentials));
+    localStorage.setItem("credentials", JSON.stringify(arr));
 
     var modal = document.getElementById("myModal");
     modal.style.display = "block";
@@ -381,14 +370,31 @@ function solve(event) {
     let credentials = JSON.parse(localStorage.getItem("credentials")) || [];
     const user = credentials.find(user => user.username === username && user.password === password);
 
+    let errorMessage = document.getElementById("error-message");
+
     if (user) {
         const sessionToken = generateSessionToken();
-        localStorage.setItem('sessionToken',sessionToken);
+        user.sessionToken = sessionToken;
+        localStorage.setItem("credentials", JSON.stringify(credentials));
+        localStorage.setItem('sessionToken', sessionToken);
         window.location.href = "index.html"; 
     } else {
-        alert("Invalid username or password. Please try again.");
+        errorMessage.textContent = "Invalid username or password. Please try again.";
     }
 }
+
+function togglePassword() {
+    let passwordField = document.getElementById("password");
+    let toggleButton = document.querySelector(".toggle-password");
+    if (passwordField.type === "password") {
+        passwordField.type = "text";
+        toggleButton.textContent = "Hide";
+    } else {
+        passwordField.type = "password";
+        toggleButton.textContent = "Show";
+    }
+}
+
 
 function recoverPassword(event) {
     event.preventDefault(); 
@@ -412,14 +418,28 @@ function recoverPassword(event) {
     modal.style.display = "block";
 }
 
-function togglePassword() {
-    let passwordField = document.getElementById("password");
-    let toggleButton = document.querySelector(".toggle-password");
-    if (passwordField.type === "password") {
-        passwordField.type = "text";
-        toggleButton.textContent = "Hide";
+function displayProfileInfo() {
+    let credentials = JSON.parse(localStorage.getItem("credentials")) || [];
+    let sessionToken = localStorage.getItem("sessionToken");
+    if (sessionToken) {
+        let user = credentials.find(user => user.sessionToken === sessionToken);
+        if (user) {
+            document.getElementById("profile-firstName").textContent = user.firstName;
+            document.getElementById("profile-lastName").textContent = user.lastName;
+            document.getElementById("profile-username").textContent = user.username;
+        } else {
+            // If the user is not found, redirect to sign-in page
+            window.location.href = "signIn.html";
+        }
     } else {
-        passwordField.type = "password";
-        toggleButton.textContent = "Show";
+        // If no session token, redirect to sign-in page
+        window.location.href = "signIn.html";
     }
 }
+
+function signOut() {
+    localStorage.removeItem("sessionToken");
+    window.location.href = "signIn.html";
+}
+
+
